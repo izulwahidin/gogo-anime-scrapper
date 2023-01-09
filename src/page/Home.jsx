@@ -28,6 +28,7 @@ const Home = ({slug}) => {
                 setLoaded(true)
             })
             .catch((e) => setError(e));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

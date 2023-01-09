@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { BASEAPI, getEndpoint } from '../functions'
+import { BASEAPI } from '../functions'
 import Info from '../components/single/Info'
 import HeadTag from '../components/single/HeadTag'
 
@@ -24,6 +24,7 @@ export default function Video() {
                 setLoaded(true)
             })
             .catch((e) => setError(e))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     
     return (
