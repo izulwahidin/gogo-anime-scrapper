@@ -1,6 +1,6 @@
 
 export const siteTitle = 'KissAnime';
-export const BASEAPI = 'http://localhost:1212';
+export const BASEAPI = 'https://wgrab.vercel.app';
 export const currentURL = new URL(window.location);
 
 export const image2cdn = (url) => {

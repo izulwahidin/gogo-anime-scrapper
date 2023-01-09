@@ -7,11 +7,11 @@ const CardSection = ({title, shimmer, data, grid = 6}) => {
     const costumClassGrid = () => {
         let c_class = null;
         if(grid === 6){
-            c_class = `grid gap-5 grid-cols-2 md:grid-cols-4 lg:grid-cols-${grid}`;
+            c_class = `grid gap-5 grid-cols-2 md:grid-cols-4 lg:grid-cols-6`;
         }else if(grid === 5){
-            c_class = `grid gap-5 grid-cols-2 md:grid-cols-5`;
+            c_class = `grid gap-5 grid-cols-2 md:grid-cols-4 lg:grid-cols-5`;
         }else{
-            c_class = `grid gap-5 grid-cols-2`;
+            c_class = `grid gap-5 grid-cols-2 lg:grid-cols-2`;
         }
         return c_class;
     }
