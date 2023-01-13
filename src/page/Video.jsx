@@ -17,7 +17,7 @@ export default function Video() {
     // API Call
     useEffect(()=> {
         let encode = btoa(`https://gogohd.net/videos/${slug}`);
-        fetch(`${BASEAPI}?gogo=${encode}`)
+        fetch(`${BASEAPI}/gogo/?url=${encode}`)
             .then(res => res.json())
             .then(json => {
                 setData(json)
