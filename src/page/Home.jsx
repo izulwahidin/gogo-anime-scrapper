@@ -21,7 +21,7 @@ const Home = ({slug}) => {
         const parsePage = () => getEndpoint().replace(getPath(),slug);
 
         let encode = btoa(`https://gogohd.net${parsePage()}`);
-        fetch(`${BASEAPI}/gogo/?url=${encode}`)
+        fetch(`${BASEAPI}/api/gogo.php?url=${encode}`)
             .then(res => res.json())
             .then(json => {
                 setData(json)
