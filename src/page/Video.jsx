@@ -36,13 +36,19 @@ export default function Video() {
                             {
                                 !loaded?(
                                     <>
-                                        shimmer...
+                                        <div className=''>
+                                            <Info shimmer={true}/>
+                                            <CardSection title='List Episode' shimmer={10} grid={5}/>
+                                        </div>
+                                        <div className=''>
+                                            <CardSection title='Latest Episode' shimmer={8} grid={false}/>
+                                        </div>
                                     </>
                                 ):(
                                     <>
                                         <HeadTag title={`Watch ${data.info.full_title}`} desc={data.info.description} />
                                         <div className=''>
-                                            <Info data={data.info}/>
+                                            {/* <Info data={data.info}/> */}
                                             <CardSection title='List Episode' data={data.cards.slice(0,data.cards.length-30)} grid={5}/>
                                         </div>
                                         <div className=''>
