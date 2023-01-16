@@ -48,7 +48,7 @@ export default function Video() {
                                     <>
                                         <HeadTag title={`Watch ${data.info.full_title}`} desc={data.info.description} />
                                         <div className=''>
-                                            {/* <Info data={data.info}/> */}
+                                            <Info data={data.info}/>
                                             <CardSection title='List Episode' data={data.cards.slice(0,data.cards.length-30)} grid={5}/>
                                         </div>
                                         <div className=''>
