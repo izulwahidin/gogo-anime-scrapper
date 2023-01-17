@@ -1,3 +1,3 @@
-/sitemap.txt            https://wgrab.vercel.app/gogo/?sitemap 200
 /sitemap.txt page=:page https://wgrab.vercel.app/gogo/?sitemap=:page 200
+/sitemap.txt            https://wgrab.vercel.app/gogo/?sitemap 200
 /*                      /index.html 200
