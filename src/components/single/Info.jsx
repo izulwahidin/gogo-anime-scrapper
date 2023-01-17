@@ -6,6 +6,7 @@ export default function Info({data,shimmer}) {
     const [height, setHeight] = useState("0px");
 
     const set_iframe_eight = () => {
+        console.log('frame ',ref.current.contentWindow)
         setHeight(ref.current.contentWindow.document.body.scrollHeight + "px");
     }
 
@@ -20,7 +21,7 @@ export default function Info({data,shimmer}) {
                     <>
                         <div className='m-2 p-3'>
                         <h2 className='text-2xl pb-5'>{data.full_title}</h2>
-                        <iframe ref={ref} onLoad={set_iframe_eight} className="w-full aspect-video rounded" frameborder="0" src={data.video} title={data.title} scrolling="no"></iframe>
+                        <iframe ref={ref} onLoad={set_iframe_eight} className="w-full aspect-video rounded" frameborder="0" src="https://www.bing.com/" title={data.title} scrolling="no"></iframe>
                         <p className='font-bold py-2'>{data.title}</p>
                         <p className='text-sm '>{data.description}</p>
                         </div>

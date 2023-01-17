@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/sitemap.txt"
+  to = "/gogo/?sitemap"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.txt?page=*"
+  to = "/gogo/?sitemap=:splat"
+  status = 200
+  force = true
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
