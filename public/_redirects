@@ -1,0 +1,3 @@
+/sitemap.txt        https://wgrab.vercel.app/gogo/?sitemap 200
+/sitemap.txt?page=* https://wgrab.vercel.app/gogo/?sitemap=:splat 200
+/*                  /index.html 200
