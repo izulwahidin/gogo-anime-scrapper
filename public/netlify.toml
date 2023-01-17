@@ -1,12 +1,12 @@
 [[redirects]]
   from = "/sitemap.txt"
-  to = "/gogo/?sitemap"
+  to = "https://wgrab.vercel.app/gogo/?sitemap"
   status = 200
   force = true
 
 [[redirects]]
   from = "/sitemap.txt?page=*"
-  to = "/gogo/?sitemap=:splat"
+  to = "https://wgrab.vercel.app/gogo/?sitemap=:splat"
   status = 200
   force = true
   
